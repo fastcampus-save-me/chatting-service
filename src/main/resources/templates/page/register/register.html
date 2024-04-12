@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ddd</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/bs-brain@2.0.3/components/registrations/registration-12/assets/css/registration-12.css">
+</head>
+<body>
+
+<!-- Registration 12 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-5">
+                    <h2 class="display-5 fw-bold text-center">회원가입</h2>
+                    <p class="text-center m-0">이미 계정이 있으신가요? <a href="#!"
+                                                                class="link-primary text-decoration-none">로그인</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="row gy-5 justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <form action="#!">
+                            <div class="row gy-3 overflow-hidden">
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control border-0 border-bottom rounded-0"
+                                               name="email" id="email" placeholder="name@example.com" required>
+                                        <label for="email" class="form-label">이메일</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-dark rounded-0 fs-6" onclick="emailSuccess()">인증번호 발급</button>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="emailInput" style="display: none">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email-success" placeholder="name@example.com" required>
+                                        <label for="email" class="form-label">이메일 인증번호</label>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="submitBtn" style="display: none">
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit">인증번호 확인</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" style="display: none">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control border-0 border-bottom rounded-0"
+                                               name="password" id="password" value="" placeholder="Password" required>
+                                        <label for="password" class="form-label">비밀번호</label>
+                                    </div>
+                                </div>
+                                <div class="col-12" style="display: none">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control border-0 border-bottom rounded-0"
+                                               name="password" id="nickname" value="" placeholder="Password" required>
+                                        <label for="password" class="form-label">닉네임</label>
+                                    </div>
+                                </div>
+                                <div class="col-12" style="display: none">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" name="iAgree"
+                                               id="iAgree" required>
+                                        <label class="form-check-label text-secondary" for="iAgree">
+                                            <a href="#!" class="link-primary text-decoration-none">개인정보</a> 수집 및 활용에 동의
+                                            하십니까?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12" style="display: none">
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit">회원가입</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex align-items-center justify-content-center gap-3 flex-lg-column">
+                        <div class="bg-dark h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+                        <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
+                        <div class="bg-dark h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+                        <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
+                    </div>
+                    <div class="col-12 col-lg-5 d-flex align-items-center">
+                        <div class="d-flex gap-3 flex-column w-100 ">
+                            <img src="/img/registerImg.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
+
+<script>
+    function emailSuccess() {
+        document.getElementById("emailInput").style.display = 'block';
+        document.getElementById("submitBtn").style.display = 'block';
+    }
+
+</script>
+
+</body>
+</html>
