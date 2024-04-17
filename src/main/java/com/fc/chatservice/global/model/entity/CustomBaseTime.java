@@ -1,4 +1,4 @@
-package com.fc.chatservice.global.model;
+package com.fc.chatservice.global.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

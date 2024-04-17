@@ -1,8 +1,9 @@
-package com.fc.chatservice.domain.user.model.entity;
+package com.fc.chatservice.domain.auth.model.entity;
 
+import com.fc.chatservice.domain.auth.model.entity.type.Authority;
 import com.fc.chatservice.domain.chat.model.entity.Chat;
 import com.fc.chatservice.domain.room.model.entity.Room;
-import com.fc.chatservice.global.model.CustomBaseTime;
+import com.fc.chatservice.global.model.entity.CustomBaseTime;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
