@@ -40,6 +40,6 @@ public class User extends CustomBaseTime {
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Room> roomList;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Chat> chat;
 }

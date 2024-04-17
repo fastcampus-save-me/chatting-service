@@ -1,6 +1,7 @@
 package com.fc.chatservice.domain.chat.model.entity;
 
 import com.fc.chatservice.domain.room.model.entity.Room;
+import com.fc.chatservice.domain.user.model.entity.User;
 import com.fc.chatservice.global.model.CustomBaseTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Column;
@@ -36,4 +37,6 @@ public class Chat extends CustomBaseTime {
     @Column(nullable = false)
     private String message;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private User user;
 }
