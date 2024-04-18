@@ -1,4 +1,4 @@
-package com.fc.chatservice.chatting.controller;
+package com.fc.chatservice.domain.chat.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
