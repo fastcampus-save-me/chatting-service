@@ -19,7 +19,7 @@ public class ChatController {
 
     @GetMapping("/chat")
     public String chat() {
-        return "chat";
+        return "chat/chat";
     }
 
 }

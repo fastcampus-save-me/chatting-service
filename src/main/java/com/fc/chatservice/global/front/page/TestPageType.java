@@ -1,4 +1,4 @@
-package com.fc.chatservice.global.font.page;
+package com.fc.chatservice.global.front.page;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

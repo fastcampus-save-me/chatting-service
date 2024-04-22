@@ -1,6 +1,6 @@
-package com.fc.chatservice.global.font.controller;
+package com.fc.chatservice.global.front.controller;
 
-import com.fc.chatservice.global.font.page.TestPageType;
+import com.fc.chatservice.global.front.page.TestPageType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
